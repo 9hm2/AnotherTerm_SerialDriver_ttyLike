@@ -8,7 +8,7 @@ The program works in the AnotherTerm application on the Android platform. The pr
 
 (0x067b, 0x23a3) > "pl2303"
 
-(0x1a86, 0x7523) > "ch341"
+(0x1a86, 0x7523) > "ch341" (not tested)
 
 (0x10c4, 0xea60) > "cp210x"
 
