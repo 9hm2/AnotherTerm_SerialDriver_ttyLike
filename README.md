@@ -1,20 +1,14 @@
 The program works in the AnotherTerm application on the Android platform. The program creates a virtual serial port in the /port folder, which can be referenced by programs capable of handling serial ports available in the proot system. The program is under development, so errors may occur. Currently, these devices are supported:
 
-(0x0403, 0x6001) > "ftdi" (some bugs, partial support)
+FTDI (some bugs, partial support)
 
-(0x067b, 0x2303) > "pl2303"
+PL2303
 
-(0x0557, 0x2008) > "pl2303"
+CH341 (not tested)
 
-(0x067b, 0x23a3) > "pl2303"
+CP210X
 
-(0x1a86, 0x7523) > "ch341" (not tested)
-
-(0x10c4, 0xea60) > "cp210x"
-
-(0x2341, 0x0043) > "cdc_acm_driver"
-
-(0x0525, 0xa4a7) > "cdc_acm_driver"
+CDC-ACM
 
 https://green-green-avk.github.io/AnotherTerm-docs/installing-linux-under-proot.html#main_content
 
