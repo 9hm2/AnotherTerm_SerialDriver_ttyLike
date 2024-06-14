@@ -20,7 +20,7 @@ The modified libusb is essential for operation:
 
 https://green-green-avk.github.io/AnotherTerm-docs/installing-libusb-for-nonrooted-android.html#main_content
 
-Two files were created: one is vserial, and the other is serial_ioctl_intercepter.so.
+Two files were created: one is vserial, and the other is serial_ioctl_wrapper.so.
 
 The vserial works on its own, for example, with screen or minicom programs.
 
