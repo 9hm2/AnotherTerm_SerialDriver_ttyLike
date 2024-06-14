@@ -24,7 +24,7 @@ Two files were created: one is vserial, and the other is serial_ioctl_wrapper.so
 
 The vserial works on its own, for example, with screen or minicom programs.
 
-The serial_ioctl_intercepter.so is necessary if we want to use programs that attempt to write or read serial port settings via ioctl, for example, any program written with the pyserial module.
+The serial_ioctl_wrapper.so is necessary if we want to use programs that attempt to write or read serial port settings via ioctl, for example, any program written with the pyserial module.
 
 Copy the vserial program to the /usr/bin folder.
 Copy the serial_ioctl_wrapper.so file to the /usr/lib folder.
