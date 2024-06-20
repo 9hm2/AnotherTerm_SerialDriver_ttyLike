@@ -1,14 +1,14 @@
 The program works in the AnotherTerm application on the Android platform. The program creates a virtual serial port in the /port folder, which can be referenced by programs capable of handling serial ports available in the proot system. The program is under development, so errors may occur. Currently, these devices are supported:
 
-FTDI (some bugs, partial support)
+FTDI (Tested and working)
 
-PL2303
+PL2303 (Tested and working)
 
-CH341 (not tested)
+CH341 (Tested and working)
 
-CP210X
+CP210X (Tested and working)
 
-CDC-ACM
+CDC-ACM (Tested and working)
 
 https://green-green-avk.github.io/AnotherTerm-docs/installing-linux-under-proot.html#main_content
 
@@ -29,16 +29,10 @@ Copy the serial_ioctl_wrapper.so file to the /usr/lib folder.
 
 For easier operation, modify the ~/.bashrc file by adding this line:
 
-alias serial_ioctl_intercepter='LD_PRELOAD=/usr/lib/serial_ioctl_wrapper.so
+export LD_PRELOAD=/usr/lib/serial_ioctl_wrapper.so
 
 If we start the vserial program with the "vserial &" command, we can still use the given terminal window, and we can also manage the ttyUSB0 created in the /port folder from other terminal windows while the program is running. To stop the program, use the "killall vserial" command or in the terminal window where it is running, press CTRL+C after the "fg" command.
 
-If we want to use a program like esptool, we need to use the serial_ioctl_intercepter.
-For example:
-
-serial_ioctl_intercepter esptool --port /port/ttyUSB0 erase_flash
-
-serial_ioctl_intercepter esptool --port /port/ttyUSB0 write_flash --flash_size detect 0 "path_to_file"
 
 The pogram in action:
 
